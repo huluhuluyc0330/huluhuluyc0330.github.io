@@ -1,0 +1,20 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This is Jeff's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+This is a web
+sometimes I use [baidu](https://www.baidu.com)to build website.
+
+This is my idcard ![](images/ID.heic)
+
+If you want to learn more about this web, visit[this page](about.html)
+
+
