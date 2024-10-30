@@ -3,16 +3,16 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "Resume"
       href: about.html
-    - text: "Plots"
-      href: plots.html
-    - text: "Plotly"
-      href: poltly.html
+    - text: "Dashboard"
+      href: Dashboard.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<yuhao02c@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: http://github.com/huluhuluyc0330
+    
+    
 output:
   html_document:
-    theme: cosme
+    theme: sandstone

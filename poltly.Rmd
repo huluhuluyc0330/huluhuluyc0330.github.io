@@ -4,7 +4,7 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+    theme: sandstone
 ---
 
 # Here are some plots
@@ -51,7 +51,23 @@ nyc_airbnb |>
   plot_ly(
     x=~neighbourhood,y=~price,
     type = "box",
-    color = ~neighbourhood
+    color = ~neighbourhood,
+    colors = "viridis"
   )
 ```
 
+
+
+
+
+bar chart with number of rentals
+```{r}
+nyc_airbnb |>
+  count(neighbourhood) |>
+  mutate(neighbourhood=fct_reorder(neighbourhood,n)) |>
+  plot_ly(
+    x=~neighbourhood,y=~n,
+          type = "bar")
+```
+ 
+ 

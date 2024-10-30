@@ -1,14 +1,94 @@
 ---
-title: "About this website"
+title: "Resume"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+    theme: sandstone
 ---
+### **Personal Statement**
+  A motivated and detail-oriented Biostatistics graduate  student with a strong foundation in marine science and extensive research experience. Proven ability to analyze complex data and derive meaningful insights. Seeking opportunities to contribute to innovative projects in biostatistics and data science.
 
-# Information about this web
+### **Education**
+##### **Columbia University in the City of New York  (09.2024 - 06.2026)**
+Major: Biostatistics                 
 
-this website was made as an example in [p8105](https://p8105.com). I'm making in RMD and will use GitHub for hosting.
+##### **Shanghai Jiaotong University (SJTU) (09.2020 - 06.2024)**  
+Major: Marine Science  
 
+**Core Courses:**  
+- Calculus I/II  
+- Linear Algebra  
+- Probability and Statistics  
+- Omics Big Data  
+- Thinking and Methodology in Programming (C)  
+- Biological Oceanography  
 
+**Honors and Awards:**  
+- Excellent League Member of Shanghai Jiao Tong University (2021-2022) - *04.2022*  
+- 1st Class Scholarship of Shanghai Jiao Tong University (2021-2022) - *12.2022*  
+- 2nd Class Scholarship of Shanghai Jiao Tong University (2020-2021) - *11.2021*  
+
+### **Publications**
+
+**Xiaoyan Wang*, Lin Zhang*, Ling Hu*, Yuhao Chang, Wenjun Xie, Jisi Teng, Ding Shang, Jun Wang**  
+*An Integrated Meta-analysis of Predictive Transcription Signature and Metabolites with Biological Functions in Hepatic Fibrosis*, Journal of Clinical and Translational Hepatology (Under Review)
+
+### **Research Experience**
+
+##### **SJTU-Shanghai Center for Systems Biomedicine (06.2023 - 09.2023)**  
+**Research Title:** An Integrated Meta-analysis of Predictive Transcription Signature and Metabolites with Biological Functions in Hepatic Fibrosis (HF).  
+**Undergraduate Researcher; Advisor:** Professor Xiaoyan Wang  
+- Conducted literature study on Hepatic Fibrosis and related data mining.  
+- Performed data analysis using RStudio to identify significant changing factors in HF and visualized data with MATLAB.  
+- Utilized MetaboAnalyst 5.0 to examine alterations in metabolism pathways and interactions between potential metabolites and genes, followed by manuscript writing on Methods and Results.  
+
+##### **SJTU-Yale Joint Center for Biostatistics and Data Science (09.2022 - 10.2023)**  
+
+**Research Title:** Network Construction and Comparative Analyses of Analysis Tools  
+**Undergraduate Researcher; Advisor:** Professor Tao Wang  
+- Evaluated existing microbiome network analysis tools and provided biostatistical guidance for threshold selection.  
+- Proposed and verified practical thresholds for data preprocessing in network construction and correlation inference methods.  
+- Acquired analytical skills with network analysis tools: NetShfit, NetCoMi, and Anuran.  
+
+##### **SJTU School of Oceanography (03.2021 - 03.2023)**
+**Research Title:** Development of Marine Algae-Based Serum and Evaluation of its Biomedical Efficacy  
+**Research Assistant; Advisor:** Professor Ji Li  
+- Conducted literature study and market research on seaweed extracts in the cosmetic industry.  
+- Assisted in proposal and experimental design, finalizing the formulation of Sargassum extracts.  
+- Wrote the patent for Sargassum Extract Serum Preparation based on market assessments.  
+
+### **Internship Experience**
+
+##### **Yangtze River Pharmaceutical Group (07.2023 - 08.2023)**  
+
+**Market Department Strategy Analysis Center; Referee:** Xiaodong Sun, Associate Director  
+- Assisted analysts in collecting national data on population, GDP, and urban areas.  
+- Conducted data selection and analysis of market information for report writing.  
+- Independently completed performance analysis of top domestic pharmaceutical companies in 2022.  
+
+### **Leadership and Activities**
+
+##### **Shanghai Jiao Tong University (05.2023 - 09.2023)**  
+
+**Social Practice Program: "Journey to the Sea: Listening to the Ocean"**  
+**Team Leader**  
+- Led a team of 36 students in interviewing the crew of the 'Xuelong No.2' polar research vessel.  
+- Compiled interviews into a detailed 30,000-word report on the work environment, career development, and psychological states of marine professionals.  
+- Published five articles on the department's Public Account, highlighting key findings.  
+- Project won 1st Prize in the university's Student Social Practice Excellence Program (Top 1.5% of 1086 teams).  
+
+##### **Shanghai Jiao Tong University (09.2021 - 12.2022)**  
+
+**Vice Minister of the Publicity Department**  
+- Responsible for writing and uploading articles on the public website to promote college activities.  
+- Led the filming of the Shanghai Jiao Tong University admissions video, which received over 16,000 views and likes across the web.  
+
+### **Skills and Others**
+
+**Computer Skills:**  
+- Microsoft Excel, Word, PowerPoint  
+- C++, MATLAB, R Programming  
+
+**Hobbies:**  
+- Dancing, Calligraphy, Traveling, Tea Art, Diving  
