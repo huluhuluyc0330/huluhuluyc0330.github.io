@@ -1,0 +1,83 @@
+---
+title: "dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(dplyr)
+library(rnoaa)
+```
+
+```{r}
+weather_df = 
+  rnoaa::meteo_pull_monitors(
+    c("USC00300023", "USC00300055", "USC00300063"),
+    var = c("PRCP", "TMIN", "TMAX"), 
+    date_min = "2009-01-01",
+    date_max = "2010-12-31") |>
+  mutate(
+    name = case_match(
+      id, 
+      "USC00300023" ~ "Addison", 
+      "USC00300055" ~ "Kalispell Glacier Airport",
+      "USC00300063" ~ "Alcove Dam"),
+    tmin = tmin / 10,
+    tmax = tmax / 10) |>
+  select(name, id, everything())
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+weather_df |>
+  mutate(text_label=str_c("date",date)) |>
+  plot_ly(
+    x =~tmin, y=~tmax,color=~name,text=~text_label,
+    type="scatter",mode="markers",alpha = 0.8, colors = "viridis"
+  ) |>
+  layout(title = "Scatter Plot of Minimum vs. Maximum Temperature",
+         xaxis = list(title = "Minimum Temperature (°C)"),
+         yaxis = list(title = "Maximum Temperature (°C)"))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+weather_df |> plot_ly( x = ~date, colors = "viridis") |>
+  add_lines(y = ~tmax, color = ~name, name =~name,alpha=0.5) |>
+  layout(title = "Weather Data for Three Stations",
+         xaxis = list(title = "Date"),
+         yaxis = list(title = "Values"),
+         legend = list(x = 1, y = 0))
+```
+
+### Chart C
+
+```{r}
+weather_df |>
+  group_by(name, date) |>
+  summarize(mean_tmin = mean(tmin, na.rm = TRUE)) |>
+  plot_ly(
+    x=~date,y=~mean_tmin,color=~name,type="bar",colors = "viridis",
+    alpha = 0.8
+  ) |>
+   layout(
+    title = "Average Minimum Temperature by Date and Station",
+    xaxis = list(title = "Date"),
+    yaxis = list(title = "Average Minimum Temperature (°C)")
+  )
+```
+
